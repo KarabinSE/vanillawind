@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <style>
+          /* 
+              Det är bara resets i base. Tänker att det finns lite 
+              sånt i stilmallarna redan som man kan åka på..? 
+          */
+          /* @tailwind base; */
+          @tailwind components;
+          @tailwind utilities;
+    </style>
   </head>
-  <body class="bg-black">
+  <body class="bg-black m-0">
     <div class="w-screen absolute h-screen opacity-50 bg-cover bg-center" style="background-image: url(https://cataas.com/cat?width=1600)">
     </div>
 
-    
-
-    <script type="module" src="/main.js"></script>
   </body>
 </html>
