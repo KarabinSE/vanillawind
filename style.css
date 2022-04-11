@@ -1,0 +1,7 @@
+    /* 
+        Det är bara resets i base. Tänker att det finns lite 
+        sånt i stilmallarna redan som man kan åka på..? 
+    */
+    /* @tailwind base; */
+    @tailwind components;
+    @tailwind utilities;
