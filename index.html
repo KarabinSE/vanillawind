@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <style>
-          /* 
-              Det är bara resets i base. Tänker att det finns lite 
-              sånt i stilmallarna redan som man kan åka på..? 
-          */
-          /* @tailwind base; */
-          @tailwind components;
-          @tailwind utilities;
-    </style>
-  </head>
-  <body class="bg-black m-0">
-    <div class="w-screen absolute h-screen opacity-50 bg-cover bg-center" style="background-image: url(https://cataas.com/cat?width=1600)">
-    </div>
 
-    <div class="absolute inset-0 z-10 flex items-center justify-center text-white text-6xl">
-      <h1>Yeehaw! 🤠</h1>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+  </style>
+</head>
 
-  </body>
+<body class="m-0 bg-black">
+  <div class="absolute w-screen h-screen bg-center bg-cover opacity-50"
+    style="background-image: url(https://cataas.com/cat?width=1600)">
+  </div>
+
+  <div class="absolute inset-0 z-10 flex items-center justify-center text-6xl text-white">
+    <h1>Yeehaw! 🤠</h1>
+  </div>
+
+</body>
+
 </html>
