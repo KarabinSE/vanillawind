@@ -5,22 +5,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
-  <style>
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
-  </style>
+  <link rel="stylesheet" href="./src/css/app.css" />
 </head>
 
 <body class="m-0 bg-black">
-  <div class="absolute w-screen h-screen bg-center bg-cover opacity-50"
-    style="background-image: url(https://cataas.com/cat?width=1600)">
+  <div class="absolute w-screen h-screen bg-center bg-cover opacity-50" style="background-image: url(src/img/0000.jpg)">
   </div>
 
   <div class="absolute inset-0 z-10 flex items-center justify-center text-6xl text-white">
-    <h1>Yeehaw! 🤠</h1>
+    <div x-data="{ isOpen: false }">
+      <button x-show="!isOpen" x-on:click="isOpen = !isOpen">Click me! 🙈</button>
+      <h1 x-show="isOpen" x-on:click="isOpen = !isOpen">You touched me 😳</h1>
+    </div>
   </div>
 
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
 
 </html>
